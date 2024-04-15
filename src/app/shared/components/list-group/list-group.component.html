@@ -1,0 +1,8 @@
+
+    <ul class="list-group" *ngFor="let item of items">
+        <li class="list-group-item" >
+            {{ item.name }} - ${{ item.price }}
+            <span *ngIf="item.discontinued" class="badge bg-danger">Devam Edilmeyen</span>
+            <span *ngIf="item.price>1000" class="badge bg-warning">Kargo Bedava</span>
+        </li>
+    </ul>
